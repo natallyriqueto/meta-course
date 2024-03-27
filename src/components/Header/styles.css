@@ -1,0 +1,23 @@
+header {
+    max-width: 70rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+ul {
+    display: flex;
+    gap: 2rem;
+}
+
+ul li {
+    list-style: none;
+    cursor: pointer;
+}
+
+ul li:hover {
+    color: var(--green);
+    font-weight: 600;
+}

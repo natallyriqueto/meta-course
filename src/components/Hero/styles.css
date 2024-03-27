@@ -1,0 +1,55 @@
+.heroContainer {
+    background-color: var(--dark-green);
+}
+
+.heroContent {
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    position: relative;
+
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heroInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 30%;
+}
+
+.imgContent img {
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    max-height: 100%;
+    flex-grow: 0;
+}
+
+h1 {
+    color: var(--yellow);
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+
+@media (max-width: 650px) {
+    .imgContent {
+        display: none;
+    }
+    
+    .heroInfo {
+        max-width: 90%;
+    }
+}

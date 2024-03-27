@@ -1,0 +1,28 @@
+section {
+    background-color: var(--gray);
+}
+
+footer {
+    max-width: 70rem;
+    padding: 5rem 2rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerNav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.footerList {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+strong {
+    color: var(--dark-green);
+}

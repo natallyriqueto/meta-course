@@ -1,0 +1,37 @@
+.cardInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.cardImageContainer {
+    height: 25vh;
+}
+
+.cardImageContainer img {
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.titleContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.priceTag {
+    color: var(--orange);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.cardTitle {
+    font-size: 1.125rem;
+}
+
+.cardDescription {
+    color: var(--dark-green);
+    height: 5rem;
+}

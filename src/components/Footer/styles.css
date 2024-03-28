@@ -23,6 +23,6 @@ footer {
     gap: 1rem;
 }
 
-strong {
+.footerList strong {
     color: var(--dark-green);
 }

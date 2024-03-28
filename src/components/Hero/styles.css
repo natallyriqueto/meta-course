@@ -6,7 +6,6 @@
     max-width: 70rem;
     margin: 0 auto;
     padding: 3rem 2rem;
-    position: relative;
 
     display: flex;
     gap: 2rem;
@@ -22,24 +21,21 @@
 }
 
 .imgContent img {
-    position: absolute;
-    top: 2rem;
-    right: 1rem;
     max-height: 100%;
     flex-grow: 0;
 }
 
-h1 {
+.heroInfo h1 {
     color: var(--yellow);
     font-size: 3rem;
 }
 
-h2 {
+.heroInfo h2 {
     font-size: 1.5rem;
     color: white;
 }
 
-p {
+.heroInfo p {
     color: white;
 }
 

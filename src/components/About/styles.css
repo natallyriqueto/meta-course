@@ -1,0 +1,35 @@
+.aboutContainer {
+  max-width: 70rem;
+  height: 50vh;
+  margin: 0 auto;
+  padding: 2rem;
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.aboutImgContent {
+    width: 50%;
+}
+
+.aboutImgContent img {
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    width: 15rem;
+    height: 18rem;
+}
+
+
+.aboutImgContent img:first-child {
+    top: 3rem;
+    right: 0;
+}
+
+.aboutImgContent img:nth-child(2) {
+    bottom: 3rem;
+    right: 9rem;
+}

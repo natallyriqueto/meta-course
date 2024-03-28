@@ -1,0 +1,24 @@
+
+.menuContainer {
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.menuText {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuText h2 {
+    font-size: 2rem;
+}
+
+.cardContainer {
+    display: grid;
+    justify-content: center;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-top: 5rem;
+}

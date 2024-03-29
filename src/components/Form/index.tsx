@@ -3,11 +3,13 @@ import * as Yup from 'yup';
 import { useFormik } from "formik";
 import { FormErrorMessage } from "../FormErrorMessage";
 import { fetchAPI, submitAPI } from "@/utils/mockApi.js";
-import "./styles.css";
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import "./styles.css";
 
 export function Form() {
     const [availableTimes, setAvailableTimes] = useState([]);
+    const navigate = useNavigate();
 
     async function handleAvailableTimes(e) {
         const times = await fetchAPI(new Date());
@@ -19,9 +21,8 @@ export function Form() {
     const formik = useFormik({
         initialValues: {
           fullname: "",
-          email: "",
-          phone: "", 
-          occasion: "",
+          phone: "",
+          occasion: "birthday",
           diners: 1,
           date: "",
           time: ""
@@ -29,17 +30,22 @@ export function Form() {
         onSubmit: async values => {
             const response = submitAPI(values);
             if (response) {
-                console.log("works")
+                navigate('/reservation-confirmation',
+                { state: {
+                    date: values.date,
+                    time: values.time,
+                    diners: values.diners,
+                    occasion: values.occasion
+                }});
             }
         },
         validationSchema: Yup.object().shape({
-          fullname: Yup.string().required("Full name is required"),
-          email: Yup.string().email().required("Email is required"),
-          phone: Yup.string().required("Phone number is required"),
-          occasion: Yup.string().required("Occasion is required"),
-          diners: Yup.string().required("Numbers of diners is required"),
-          date: Yup.string().required("Date is required"),
-          time: Yup.string().required("Time is required"),
+            fullname: Yup.string().required("Full name is required"),
+            phone: Yup.string().required("Phone number is required"),
+            occasion: Yup.string().required("Occasion is required"),
+            diners: Yup.string().required("Numbers of diners is required"),
+            date: Yup.string().required("Date is required"),
+            time: Yup.string().required("Time is required"),
         }),
       });
     
@@ -95,7 +101,7 @@ export function Form() {
                         value={formik.values.time}
                     >
                         {availableTimes.map((item) => {
-                            return <option value={item}>{item}</option>
+                            return <option key={item} value={item}>{item}</option>
                         })}
                     </select>
                     <FormErrorMessage message={formik.errors.time} />
@@ -134,6 +140,7 @@ export function Form() {
                         max="10"
                     />
                 </div>
+                <FormErrorMessage message={formik.errors.diners} />
             </div>
             <Button text="Confirm Reservation" />
         </form>

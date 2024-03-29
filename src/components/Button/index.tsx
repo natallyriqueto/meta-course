@@ -4,6 +4,6 @@ interface buttonProps {
     text: string;
 } 
 
-export function Button({ text } :buttonProps) {
-    return <button className="btn">{text}</button>
+export function Button({ text }: buttonProps) {
+    return <button className="btn" type="submit">{text}</button>
 }

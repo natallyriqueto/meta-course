@@ -1,0 +1,29 @@
+
+.confirmationContainer {
+    padding: 3rem;
+    margin: 0 auto;
+    max-width: 70rem;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.reservationInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.reservationInfo p {
+    font-size: 1.25rem;
+    color: var(--dark-green);
+}
+
+.reservationInfo div {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}

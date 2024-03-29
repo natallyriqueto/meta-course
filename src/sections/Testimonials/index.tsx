@@ -40,6 +40,7 @@ export function Testimonials() {
                 <div className="testimonialsCard">
                     {reviews.map((item) => {
                         return <RatingCard
+                            key={item.name}
                             ratingStars={item.ratingStars}
                             name={item.name}
                             picture={item.pic}

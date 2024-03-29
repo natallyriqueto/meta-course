@@ -1,4 +1,4 @@
-import { RatingCard } from "../RatingCard";
+import { RatingCard } from "../../components/RatingCard";
 import reviewerPic1 from "@/assets/reviewer-pic1.jpg";
 import reviewerPic2 from "@/assets/reviewer-pic2.jpg";
 import reviewerPic3 from "@/assets/reviewer-pic3.jpg";

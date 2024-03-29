@@ -1,5 +1,5 @@
-import { Button } from "../Button";
-import { Card } from "../Card";
+import { Button } from "../../components/Button";
+import { Card } from "../../components/Card";
 import greekSalada from "@/assets/greek-salad.png";
 import bruchetta from "@/assets/bruchetta.png";
 import lemonDessert from "@/assets/lemon-dessert.png";
@@ -7,7 +7,7 @@ import "./styles.css";
 
 export function Menu() {
     return (
-        <section>
+        <section id="menu">
             <div className="menuContainer">
                 <div className="menuText">
                     <h2>This weeks specials</h2>

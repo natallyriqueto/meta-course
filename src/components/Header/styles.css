@@ -1,3 +1,7 @@
+.headerContainer {
+    border-bottom: 1px solid var(--gray);
+}
+
 header {
     max-width: 70rem;
     margin: 0 auto;

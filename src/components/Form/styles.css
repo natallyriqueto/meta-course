@@ -1,0 +1,45 @@
+form {
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 50%;
+}
+
+form input, select {
+    background-color: var(--gray);
+    border-radius: 6px;
+    border: none;
+    padding: 1rem;
+}
+
+form button {
+    width: 50%;
+}
+
+.inputError{
+    border: 1px solid red;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+label {
+    color: var(--dark-green);
+    font-weight: 600;
+}
+
+.iconLabel {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.dinersContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

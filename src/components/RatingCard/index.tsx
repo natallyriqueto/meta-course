@@ -7,7 +7,7 @@ interface ratingProps {
     review: string;
 }
 
-export function RatingCard({ratingStars, name, picture, review}: ratingProps) {
+export function RatingCard({name, picture, review}: ratingProps) {
     return (
         <div className="ratingContent">
             <div className="ratingStars">

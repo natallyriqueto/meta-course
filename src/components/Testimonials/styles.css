@@ -1,0 +1,22 @@
+#testimonial {
+    background-color: var(--gray);
+    padding: 3rem 1rem;
+}
+
+.testimonialsCard {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 4rem;
+}
+
+.testimonialsContent {
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.testimonialsContent h2 {
+    font-size: 2rem;
+}

@@ -1,0 +1,26 @@
+.ratingContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.userInfo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.userInfo img {
+    width: 5rem;
+    border-radius: 50%;
+}
+
+.ratingStars {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.checked {
+    color: orange;
+}

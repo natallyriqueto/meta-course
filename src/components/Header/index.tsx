@@ -1,8 +1,12 @@
 import logo from "@/assets/Logo.svg"
 import "./styles.css";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import { List, XSquare } from "phosphor-react";
 
 export function Header() {
+    const [isNavOpen, setIsNavOpen] = useState(false);
+
     const handleClick = (anchor) => {
         const id = anchor;
         const element = document.getElementById(id);
@@ -14,12 +18,23 @@ export function Header() {
         }
     };
 
+    const toggleNav = () => {
+        setIsNavOpen(state => !state);
+    }
+
     return (
         <div className="headerContainer">
             <header>
-                <img src={logo} alt="little lemon logo" />
-                <button className="dropdown">Toggle</button>
-                <nav className="mainNavigation">
+                <Link to="/">
+                    <img src={logo} alt="little lemon logo" />
+                </Link>
+                <div className="dropdown" onClick={toggleNav}>
+                    {isNavOpen
+                    ? <XSquare size={32} />
+                    : <List size={32} />
+                    }
+                </div>
+                <nav className={`mainNavigation ${isNavOpen? "mainNavigation-open": "mainNavigation-closed"}`}>
                     <ul>
                         <Link to="/"><li>Home</li></Link>
                         <li><a href="/#about" onClick={() => handleClick("about")}>About</a></li>

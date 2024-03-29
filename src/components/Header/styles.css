@@ -26,36 +26,43 @@ ul li:hover {
     font-weight: 600;
 }
 
-.dropdown {
+.dropdown-button {
+    display: none;
+}
+
+.mainNavigation-closed {
     display: none;
 }
 
 @media (max-width: 700px) {
-    .dropdown {
+    .dropdown-button {
         display: flex;
         position: relative;
         cursor: pointer;
     }
 
     .mainNavigation {
-        display: none;
-    }
-
-    .dropdown:hover .mainNavigation {
-        display: flex;
         position: absolute;
-        top: 1rem;
+        top: 5rem;
         right: 1rem;
         background-color: #f9f9f9;
-        min-width: 12rem;
+        width: 80%;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        padding: 1rem;
-        z-index: 1;
+        border-radius: 6px;
     }
 
-    .dropdown:hover .mainNavigation ul {
+    .mainNavigation ul {
         display: flex;
         flex-direction: column;
+        gap: 0;
     }
 
+    .mainNavigation li {
+        padding: 1rem 2rem;
+        border-bottom: 1px solid var(--gray);
+    }
+
+    .mainNavigation li:hover {
+        background-color: var(--gray);
+    }
 }

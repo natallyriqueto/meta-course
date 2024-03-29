@@ -26,3 +26,8 @@ body, input, button {
     font-size: 87%;
   }
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;

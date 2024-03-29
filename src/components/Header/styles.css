@@ -26,19 +26,23 @@ ul li:hover {
     font-weight: 600;
 }
 
-.dropdown-button {
-    display: none;
-}
-
-.mainNavigation-closed {
+.dropdown {
     display: none;
 }
 
 @media (max-width: 700px) {
-    .dropdown-button {
+    .mainNavigation {
+        display: none;
+    }
+
+    .dropdown {
         display: flex;
         position: relative;
         cursor: pointer;
+    }
+
+    .mainNavigation-open {
+        display: flex;
     }
 
     .mainNavigation {
@@ -55,6 +59,7 @@ ul li:hover {
         display: flex;
         flex-direction: column;
         gap: 0;
+        width: 100%;
     }
 
     .mainNavigation li {

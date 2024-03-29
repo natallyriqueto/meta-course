@@ -34,7 +34,7 @@ export function Header() {
                     : <List size={32} />
                     }
                 </div>
-                <nav className={`mainNavigation ${isNavOpen? "mainNavigation-open": "mainNavigation-closed"}`}>
+                <nav className={`mainNavigation ${isNavOpen && "mainNavigation-open"}`}>
                     <ul>
                         <Link to="/"><li>Home</li></Link>
                         <li><a href="/#about" onClick={() => handleClick("about")}>About</a></li>

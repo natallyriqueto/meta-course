@@ -5,7 +5,8 @@ export function Header() {
     return (
         <header>
             <img src={logo} alt="little lemon logo" />
-            <nav>
+            <button className="dropdown">Toggle</button>
+            <nav className="mainNavigation">
                 <ul>
                     <li>Home</li>
                     <li>About</li>

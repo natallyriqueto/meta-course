@@ -12,7 +12,7 @@ export function Home() {
             <Hero />
             <Menu />
             <Testimonials />
-            {/* <About /> */}
+            <About />
             <Footer />
         </div>
     )

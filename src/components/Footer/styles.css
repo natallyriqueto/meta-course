@@ -9,12 +9,14 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap; 
 }
 
 .footerNav {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .footerList {

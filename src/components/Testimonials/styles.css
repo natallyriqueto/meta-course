@@ -6,8 +6,9 @@
 .testimonialsCard {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 4rem;
-    margin-top: 4rem;
+    margin-top: 5rem;
 }
 
 .testimonialsContent {

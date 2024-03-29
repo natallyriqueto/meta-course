@@ -7,3 +7,7 @@
     cursor: pointer;
     padding: 1rem 1.5rem;
 }
+
+.btn:hover {
+    color: var(--dark-green);
+}

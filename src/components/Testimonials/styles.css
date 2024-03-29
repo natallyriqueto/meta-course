@@ -4,9 +4,9 @@
 }
 
 .testimonialsCard {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: center;
-    flex-wrap: wrap;
     gap: 4rem;
     margin-top: 5rem;
 }
@@ -20,4 +20,10 @@
 
 .testimonialsContent h2 {
     font-size: 2rem;
+}
+
+@media (max-width: 800px) {
+    .testimonialsCard {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

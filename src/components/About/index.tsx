@@ -17,8 +17,8 @@ export function About() {
                     </p>
                 </div>
                 <div className="aboutImgContent">
-                    {/* <img src={staffKitchenIMG} alt="little lemon staff cooking" />
-                    <img src={staffIMG} alt="little lemon staff" /> */}
+                    <img src={staffKitchenIMG} alt="little lemon staff cooking" />
+                    <img src={staffIMG} alt="little lemon staff" />
                 </div>
             </div>
         </section>

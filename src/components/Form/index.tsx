@@ -6,6 +6,7 @@ import { fetchAPI, submitAPI } from "@/utils/mockApi.js";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import "./styles.css";
+import { CalendarBlank, UsersThree } from "phosphor-react";
 
 export function Form() {
     const [availableTimes, setAvailableTimes] = useState([]);
@@ -77,7 +78,7 @@ export function Form() {
             </div>
             <div className="inputContainer">
                 <label htmlFor="date" className="iconLabel">
-                    <span className="fa fa-calendar"></span>
+                    <CalendarBlank size={25} />
                     Reservation Date
                 </label>
                 <input
@@ -122,7 +123,7 @@ export function Form() {
             </div>
             <div className="inputContainer">
                 <label className="iconLabel" htmlFor="diners">
-                    <span className="fa fa-users"></span>
+                    <UsersThree size={25} />
                     How many diners?
                 </label>
                 <div className="dinersContainer">
